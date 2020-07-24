@@ -4,7 +4,7 @@ module.exports = {
 	url: "https://your-docusaurus-test-site.com",
 	baseUrl: "/",
 	favicon: "img/video.svg",
-	organizationName: "media-stream", // Usually your GitHub org/user name.
+	organizationName: "media-stream-app", // Usually your GitHub org/user name.
 	projectName: "landing-page", // Usually your repo name.
 	themeConfig: {
 		disableDarkMode: true,
