@@ -1,12 +1,3 @@
-.onboardingFormContainer {
-	flex: 1;
-}
-
 .onboardingForm {
-	height: 100%;
-	width: 100%;
-}
-
-:global(.main-wrapper) {
-	display: flex;
+	flex: 1;
 }
