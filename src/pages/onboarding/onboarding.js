@@ -3,10 +3,35 @@ import Layout from "@theme/Layout";
 import styles from "./onboarding.module.css";
 
 function Onboarding() {
+	const [uuid, setUuid] = React.useState(null);
+
+	React.useEffect(() => {
+		fetch("https://mock-faker-server.herokuapp.com/fake/random/uuid")
+			.then((response) => response.json())
+			.then(({ data }) => setUuid(data));
+	}, []);
+
 	function onboardUser(event) {
+		event.preventDefault();
 		const userPayload = Object.fromEntries(new FormData(event.target));
-		debugger;
+		userPayload.id = uuid;
+		fetch("https://api.media-stream.app/channel", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(userPayload),
+		})
+			.then((response) => response.json())
+			.then(({ status }) => {
+				if (status === 201)
+					alert(
+						"Your interest is recorded, expect to hear back from us in 24hrs!"
+					);
+				else alert("Something went wrong!");
+			});
 	}
+
 	return (
 		<Layout
 			title={`Let's get you onboard`}
@@ -55,15 +80,10 @@ function Onboarding() {
 						required
 					/>
 
-					<label htmlFor="preferred-username">
+					<label htmlFor="username">
 						Do you have a preferred username in mind ?
 					</label>
-					<input
-						type="text"
-						name="preferred-username"
-						id="preferred-username"
-						placeholder=""
-					/>
+					<input type="text" name="username" id="username" placeholder="" />
 
 					<label htmlFor="dob">Date of birth</label>
 					<input
