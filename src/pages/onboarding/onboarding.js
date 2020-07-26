@@ -13,8 +13,10 @@ function Onboarding() {
 			description="Setup live streaming in minutes"
 		>
 			<section className={styles.onboardingContainer}>
-				<h1>Media Stream App</h1>
-				<span>Convey your interest & we will get back to you in a jiffy</span>
+				<div className={styles.headerGroup}>
+					<h1>Media Stream App</h1>
+					<span>Convey your interest & we will get back to you in a jiffy</span>
+				</div>
 				<form className={styles.onboardingForm} onSubmit={onboardUser}>
 					<label htmlFor="name">What do we call you?</label>
 					<input
@@ -77,7 +79,7 @@ function Onboarding() {
 							type="checkbox"
 							name="terms"
 							id="terms"
-							value="agreed"
+							value="accepted-terms"
 							required
 						/>
 						<label htmlFor="terms">
