@@ -84,7 +84,7 @@ function Onboarding() {
 						/>
 						<label htmlFor="terms">
 							By submitting this form you accept the terms and conditions listed
-							in
+							in{" "}
 							<a href="https://media-stream.app/terms">
 								https://media-stream.app/terms
 							</a>

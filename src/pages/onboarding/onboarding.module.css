@@ -8,6 +8,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .onboardingForm {
@@ -22,7 +23,7 @@ h1 {
 }
 
 label {
-	margin-top: 1rem;
+	margin: 1rem 0 0.5rem 1rem;
 }
 
 label:first-of-type {
@@ -31,8 +32,14 @@ label:first-of-type {
 
 input {
 	padding: 1rem;
+	border: none;
+	border-radius: 0.5rem;
 }
 
 .terms {
 	margin: 1rem 0;
+}
+
+.terms label {
+	margin-left: 0.5rem;
 }
