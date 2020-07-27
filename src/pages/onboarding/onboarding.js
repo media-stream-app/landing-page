@@ -13,7 +13,8 @@ function Onboarding() {
 
 	function onboardUser(event) {
 		event.preventDefault();
-		const userPayload = Object.fromEntries(new FormData(event.target));
+		let userPayload = Object.fromEntries(new FormData(event.target));
+		userPayload.hostname = new URL(userPayload.hostname).hostname;
 		userPayload.id = uuid;
 		fetch("https://api.media-stream.app/channel", {
 			method: "POST",
@@ -67,6 +68,17 @@ function Onboarding() {
 						name="company"
 						id="company"
 						placeholder="Please enter your company name (if any)"
+					/>
+
+					<label htmlFor="hostname">
+						Where are you planning to host the stream solution ?
+					</label>
+					<input
+						type="url"
+						name="hostname"
+						id="hostname"
+						placeholder="SSL enabled Domain name here, example.com, www.example.com, subdomain.example.com"
+						required
 					/>
 
 					<label htmlFor="timeline">
