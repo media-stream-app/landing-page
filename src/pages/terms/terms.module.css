@@ -1,0 +1,24 @@
+.headerGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.termsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.termsPage {
+  align-self: center;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+.lastUpdatedText {
+  text-align: right;
+}
