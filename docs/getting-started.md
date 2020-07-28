@@ -1,7 +1,7 @@
 ---
 id: getting-started
-title: Getting Started with Media Stream app
-hide_title: true
+title: Getting Started with Media Stream
+hide_title: false
 hide_table_of_contents: false
 sidebar_label: Getting Started
 description: How to get started with Media Stream app
@@ -11,6 +11,23 @@ keywords:
 # image: https://i.imgur.com/mErPwqL.png
 ---
 
+There are 2 main phases in the media app integration,
+
+1. [Onboarding Phase](#onboarding-phase)
+2. [Integration Phase](#integration-phase)
+
+### Onboarding Phase
+
+1. You sign up to use for Media stream app, by visiting the [onboarding page](https://media-stream.app/onboarding). Please ensure that you provide us with accurate details for fast processing
+2. You'll recieve an email from `contact.us.media.stream [at] gmail [dot] com` with the subject "Welcome to Media Stream App". It may take upto 24 hours to onboard a regular user.
+
+In the onboarding email you'll have the following important information
+
+1. [Stream Key](glossary#stream-key)
+2. [Embed Script](glossary#embed-script)
+
+### Integration Phase
+
 ## OBS
 
 ### Streaming key integration
@@ -18,19 +35,19 @@ keywords:
 1. Open OBS.
 2. Select File -> Settings.
 
-![Step 2]()
+![Step 2](/img/logo.svg)
 
 3. Select 'Stream' in settings menu.
 
-![Step 3]()
+![Step 3](/img/logo.svg)
 
 4. In Service dropdown, select 'Twitch'.
 
-![Step 4]()
+![Step 4](/img/logo.svg)
 
 5. Enter the stream key (provided in step 1 of the onboarding email received from media stream app team) in 'Stream Key' field.
 
-![Step 5]()
+![Step 5](/img/logo.svg)
 
 ### Streaming with laptop
 

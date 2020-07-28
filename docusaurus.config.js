@@ -7,21 +7,23 @@ module.exports = {
 	organizationName: "media-stream-app", // Usually your GitHub org/user name.
 	projectName: "landing-page", // Usually your repo name.
 	themeConfig: {
-		disableDarkMode: true,
+		colorMode: {
+			disableSwitch: true,
+		},
 		navbar: {
 			title: "Media Stream",
 			logo: {
 				alt: "media-stream-logo",
 				src: "img/video.svg",
 			},
-			links: [
+			items: [
 				{
-					to: "docs/",
+					to: "docs",
 					activeBasePath: "docs",
 					label: "Docs",
-					position: "left",
+					position: "right",
 				},
-				{ to: "blog", label: "Blog", position: "left" },
+				// { to: "blog", label: "Blog", position: "left" },
 			],
 		},
 		footer: {
@@ -81,16 +83,18 @@ module.exports = {
 				// docs: {
 				// 	// It is recommended to set document id as docs home page (`docs/` path).
 				// 	homePageId: "doc1",
-				// 	sidebarPath: require.resolve("./sidebars.js"),
 				// 	// Please change this to your repo.
 				// 	editUrl:
 				// 		"https://github.com/facebook/docusaurus/edit/master/website/",
 				// },
+				docs: {
+					// homePageId: "getting-started",
+				},
+				sidebarPath: require.resolve("./sidebars.js"),
 				blog: {
-					showReadingTime: true,
-					// Please change this to your repo.
-					editUrl:
-						"https://github.com/facebook/docusaurus/edit/master/website/blog/",
+					showReadingTime: false,
+					// editUrl:
+					// 	"https://github.com/facebook/docusaurus/edit/master/website/blog/",
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
