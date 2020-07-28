@@ -1,7 +1,7 @@
 module.exports = {
 	title: "Media Stream",
 	tagline: "Setup live streaming in minutes",
-	url: "https://your-docusaurus-test-site.com",
+	url: "https://media-stream.app",
 	baseUrl: "/",
 	favicon: "img/video.svg",
 	organizationName: "media-stream-app", // Usually your GitHub org/user name.
