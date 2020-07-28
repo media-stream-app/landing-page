@@ -88,9 +88,9 @@ module.exports = {
 				// 		"https://github.com/facebook/docusaurus/edit/master/website/",
 				// },
 				docs: {
-					// homePageId: "getting-started",
+					homePageId: "getting-started",
+					sidebarPath: require.resolve("./sidebars.js"),
 				},
-				sidebarPath: require.resolve("./sidebars.js"),
 				blog: {
 					showReadingTime: false,
 					// editUrl:
@@ -102,4 +102,5 @@ module.exports = {
 			},
 		],
 	],
+	onBrokenLinks: "log",
 };
