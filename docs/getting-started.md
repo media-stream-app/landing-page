@@ -30,38 +30,43 @@ In the onboarding email you'll have the following important information
 
 ## OBS
 
-### Streaming key integration
+### Profile integration
 
 1. Open OBS.
-2. Select File -> Settings.
 
-![Step 2](/img/logo.svg)
+2. Select Profile -> Import.
 
-3. Select 'Stream' in settings menu.
+![Step 2](/img/profile-integration-1.png)
 
-![Step 3](/img/logo.svg)
+3. Select 'media-stream-profile.config' folder (in system folder selection screen) that is sent as an attachment in the onboarding email from media stream app team.
 
-4. In Service dropdown, select 'Twitch'.
+![Step 3](/img/profile-integration-2.png)
 
-![Step 4](/img/logo.svg)
+4. After importing, select Profile -> media-stream-profile
 
-5. Enter the stream key (provided in step 1 of the onboarding email received from media stream app team) in 'Stream Key' field.
+![Step 4](/img/profile-integration-3.png)
 
-![Step 5](/img/logo.svg)
+5. The OBS profile title changes to 'media-stream-profile' on successful Profile selection
+
+![Step 5](/img/profile-integration-4.png)
 
 ### Streaming with laptop
 
 #### 1. Select video capture device:
 
-Click the + symbol under the 'Sources' section. You should see the 'video capture device' option, click on that.
+Click the + symbol under the 'Sources' section.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-1-adding-webcam-to-obs.png "Step 1")
+![Step 1.1](../static/img/video-capture-device-1.png)
+
+You should see the 'video capture device' option, click on that.
+
+![Step 1.2](../static/img/video-capture-device-2.png)
 
 #### 2. Name the layer
 
 When adding multiple layers it's important to ensure you label the layer.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-2-adding-webcam-to-obs.png "Step 2")
+![Step 2](../static/img/video-capture-device-3.png)
 
 #### 3. Select the device
 
@@ -69,21 +74,27 @@ When adding multiple layers it's important to ensure you label the layer.
 - b) Specify the 'Resolution/FPS type'.
 - c) Specify the resolution from 'Resolution' dropdown, if you have selected 'custom' from 'Resolution/FPS type.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-3-adding-webcam-to-obs.png "Step 3")
+#### 4. Start streaming from laptop camera
+
+![Step 4](../static/img/video-capture-device-7.png)
 
 ### Streaming with external camera
 
 #### 1. Select video capture device:
 
-Click the + symbol under the 'Sources' section. You should see the 'video capture device' option, click on that.
+Click the + symbol under the 'Sources' section.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-1-adding-webcam-to-obs.png "Step 1")
+![Step 1.1](../static/img/video-capture-device-1.png)
+
+You should see the 'video capture device' option, click on that.
+
+![Step 1.2](../static/img/video-capture-device-2.png)
 
 #### 2. Name the layer
 
 When adding multiple layers it's important to ensure you label the layer.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-2-adding-webcam-to-obs.png "Step 2")
+![Step 2](../static/img/video-capture-device-3.png)
 
 #### 3. Select the device
 
@@ -91,7 +102,7 @@ When adding multiple layers it's important to ensure you label the layer.
 - b) Specify the 'Resolution/FPS type'.
 - c) Specify the resolution from 'Resolution' dropdown, if you have selected 'custom' from 'Resolution/FPS type'.
 
-![alt text](https://cdn.streamshark.io/obs-guide/img/image-3-adding-webcam-to-obs.png "Step 3")
+![Step 3](../static/img/video-capture-device-5.png)
 
 #### 4. Optional - Adding the webcam's microphone
 
