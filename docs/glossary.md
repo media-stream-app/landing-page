@@ -18,6 +18,12 @@ A javascript snippet you insert into your existing front end application.
 
 The media stream snippet doesn't come with any default styles.
 
+## M
+
+### Media Stream Profile
+
+Is sent as a zip file in the onboarding email. This is used in the OBS application for stream to work correctly.
+
 ## S
 
 ### Stream Key

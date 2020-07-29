@@ -23,7 +23,7 @@ There are 2 main phases in the media app integration,
 
 In the onboarding email you'll have the following important information
 
-1. [Stream Key](glossary#stream-key)
+1. [Media Stream Profile](glossary#media-stream-profile)
 2. [Embed Script](glossary#embed-script)
 
 ### Integration Phase
