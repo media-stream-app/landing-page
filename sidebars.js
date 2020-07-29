@@ -1,3 +1,8 @@
 module.exports = {
-	docs: ["getting-started", "glossary"],
+	docs: [
+		{
+			"Getting Started": ["onboarding-phase", "integration-phase"],
+		},
+		"glossary",
+	],
 };

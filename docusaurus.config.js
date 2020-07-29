@@ -88,7 +88,6 @@ module.exports = {
 				// 		"https://github.com/facebook/docusaurus/edit/master/website/",
 				// },
 				docs: {
-					homePageId: "getting-started",
 					sidebarPath: require.resolve("./sidebars.js"),
 				},
 				blog: {
