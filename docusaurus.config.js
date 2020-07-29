@@ -7,6 +7,10 @@ module.exports = {
 	organizationName: "media-stream-app", // Usually your GitHub org/user name.
 	projectName: "landing-page", // Usually your repo name.
 	themeConfig: {
+		gtag: {
+			trackingID: "UA-173906064-1",
+			anonymizeIP: false,
+		},
 		colorMode: {
 			disableSwitch: true,
 		},
